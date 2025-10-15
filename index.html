@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Academic homepage - Research, publications, and teaching materials">
+    <meta name="keywords" content="academic, research, publications, teaching, university">
+    <meta name="author" content="Your Name">
+    <title>Academic Homepage | Your Name</title>
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Academic Homepage | Your Name">
+    <meta property="og:description" content="Academic homepage featuring research, publications, and teaching materials">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourusername.github.io">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+
+    <!-- External Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="light-theme">
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header Navigation -->
+    <header class="header" id="header">
+        <nav class="nav-container">
+            <div class="nav-brand">
+                <a href="#home" class="brand-link">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Your Name</span>
+                </a>
+            </div>
+
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#research" class="nav-link">Research</a></li>
+                <li class="nav-item"><a href="#publications" class="nav-link">Publications</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#teaching" class="nav-link">Teaching</a></li>
+                <li class="nav-item"><a href="#awards" class="nav-link">Awards</a></li>
+                <li class="nav-item"><a href="#blog" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon" id="themeIcon"></i>
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-content">
+            <h3>Quick Navigation</h3>
+            <nav class="sidebar-nav">
+                <a href="#research-interests" class="sidebar-link">Research Interests</a>
+                <a href="#selected-publications" class="sidebar-link">Selected Publications</a>
+                <a href="#current-projects" class="sidebar-link">Current Projects</a>
+                <a href="#recent-news" class="sidebar-link">Recent News</a>
+                <a href="#contact-info" class="sidebar-link">Contact Info</a>
+            </nav>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-background">
+                <div class="animated-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                </div>
+            </div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="greeting">Hello, I'm</span>
+                        <span class="name">Your Name</span>
+                    </h1>
+                    <p class="hero-subtitle">Professor of Computer Science</p>
+                    <p class="hero-description">
+                        Researching artificial intelligence, machine learning, and human-computer interaction
+                        to create innovative solutions for real-world problems.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                        <a href="#publications" class="btn btn-secondary">View Publications</a>
+                        <a href="assets/cv.pdf" class="btn btn-outline" download>Download CV</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-card">
+                        <img src="https://via.placeholder.com/300x300/4A90E2/FFFFFF?text=Photo" alt="Profile" class="profile-image">
+                        <div class="profile-info">
+                            <div class="social-links">
+                                <a href="https://github.com" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="https://linkedin.com" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://twitter.com" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="mailto:your.email@university.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">Academic background and research journey</p>
+                </div>
+                <div class="about-grid">
+                    <div class="about-content">
+                        <div class="about-text">
+                            <p>
+                                I am a Professor in the Department of Computer Science at Your University,
+                                where I lead the AI Research Lab. My research focuses on developing novel
+                                machine learning algorithms and applying them to solve real-world problems.
+                            </p>
+                            <p>
+                                With over 15 years of experience in academia and industry, I have published
+                                more than 100 papers in top-tier conferences and journals. My work has been
+                                recognized with numerous awards, including the Best Paper Award at NeurIPS 2022.
+                            </p>
+                        </div>
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-university"></i>
+                                <div>
+                                    <h4>Education</h4>
+                                    <p>PhD in Computer Science, MIT</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-users"></i>
+                                <div>
+                                    <h4>Students</h4>
+                                    <p>20+ graduate students mentored</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-book"></i>
+                                <div>
+                                    <h4>Publications</h4>
+                                    <p>100+ peer-reviewed papers</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">100+</span>
+                            <span class="stat-label">Publications</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">20+</span>
+                            <span class="stat-label">Students Mentored</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">$2M+</span>
+                            <span class="stat-label">Research Funding</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Section -->
+        <section id="research" class="section section-dark">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Research Interests</h2>
+                    <p class="section-subtitle">Areas of academic inquiry and exploration</p>
+                </div>
+                <div class="research-grid" id="research-interests">
+                    <article class="research-card">
+                        <div class="research-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3 class="research-title">Machine Learning</h3>
+                        <p class="research-description">
+                            Deep learning, neural networks, and novel algorithms for pattern recognition
+                            and predictive modeling in complex systems.
+                        </p>
+                        <div class="research-tags">
+                            <span class="tag">Deep Learning</span>
+                            <span class="tag">Neural Networks</span>
+                            <span class="tag">AI</span>
+                        </div>
+                    </article>
+
+                    <article class="research-card">
+                        <div class="research-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3 class="research-title">Robotics</h3>
+                        <p class="research-description">
+                            Human-robot interaction, autonomous systems, and intelligent control systems
+                            for next-generation robotic applications.
+                        </p>
+                        <div class="research-tags">
+                            <span class="tag">Autonomy</span>
+                            <span class="tag">HCI</span>
+                            <span class="tag">Control Systems</span>
+                        </div>
+                    </article>
+
+                    <article class="research-card">
+                        <div class="research-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3 class="research-title">Data Science</h3>
+                        <p class="research-description">
+                            Big data analytics, knowledge discovery, and data-driven decision making
+                            in scientific and business applications.
+                        </p>
+                        <div class="research-tags">
+                            <span class="tag">Big Data</span>
+                            <span class="tag">Analytics</span>
+                            <span class="tag">Visualization</span>
+                        </div>
+                    </article>
+
+                    <article class="research-card">
+                        <div class="research-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3 class="research-title">Computer Vision</h3>
+                        <p class="research-description">
+                            Image processing, object recognition, and visual understanding systems
+                            for autonomous perception and analysis.
+                        </p>
+                        <div class="research-tags">
+                            <span class="tag">Image Processing</span>
+                            <span class="tag">Object Detection</span>
+                            <span class="tag">AR/VR</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Publications</h2>
+                    <p class="section-subtitle">Recent academic work and research papers</p>
+                </div>
+
+                <!-- Search and Filter -->
+                <div class="publications-controls">
+                    <div class="search-box">
+                        <input type="text" id="publicationSearch" placeholder="Search publications..." class="search-input">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="journal">Journals</button>
+                        <button class="filter-btn" data-filter="conference">Conferences</button>
+                        <button class="filter-btn" data-filter="workshop">Workshops</button>
+                    </div>
+                </div>
+
+                <!-- Publications List -->
+                <div class="publications-list" id="publicationsList">
+                    <article class="publication-item" data-type="journal" data-year="2024">
+                        <div class="publication-content">
+                            <h3 class="publication-title">
+                                <a href="#">Deep Learning Approaches to Protein Structure Prediction</a>
+                            </h3>
+                            <p class="publication-authors">
+                                <strong>Your Name</strong>, John Doe, Jane Smith, et al.
+                            </p>
+                            <p class="publication-venue">
+                                <em>Nature Machine Intelligence</em>, 2024
+                            </p>
+                            <p class="publication-abstract">
+                                We present a novel deep learning architecture for predicting protein structures
+                                from amino acid sequences, achieving state-of-the-art results on benchmark datasets.
+                            </p>
+                            <div class="publication-links">
+                                <a href="#" class="publication-link">PDF</a>
+                                <a href="#" class="publication-link">Code</a>
+                                <a href="#" class="publication-link">Data</a>
+                                <a href="#" class="publication-link">BibTeX</a>
+                            </div>
+                        </div>
+                        <div class="publication-meta">
+                            <span class="publication-year">2024</span>
+                            <span class="publication-type journal">Journal</span>
+                        </div>
+                    </article>
+
+                    <article class="publication-item" data-type="conference" data-year="2023">
+                        <div class="publication-content">
+                            <h3 class="publication-title">
+                                <a href="#">Adaptive Neural Networks for Continual Learning</a>
+                            </h3>
+                            <p class="publication-authors">
+                                <strong>Your Name</strong>, Alice Johnson, Bob Wilson
+                            </p>
+                            <p class="publication-venue">
+                                <em>Proceedings of NeurIPS 2023</em>
+                            </p>
+                            <p class="publication-abstract">
+                                We propose a new approach to continual learning that uses adaptive neural networks
+                                to overcome catastrophic forgetting while maintaining high performance across tasks.
+                            </p>
+                            <div class="publication-links">
+                                <a href="#" class="publication-link">PDF</a>
+                                <a href="#" class="publication-link">Code</a>
+                                <a href="#" class="publication-link">Slides</a>
+                                <a href="#" class="publication-link">BibTeX</a>
+                            </div>
+                        </div>
+                        <div class="publication-meta">
+                            <span class="publication-year">2023</span>
+                            <span class="publication-type conference">Conference</span>
+                        </div>
+                    </article>
+
+                    <article class="publication-item" data-type="journal" data-year="2023">
+                        <div class="publication-content">
+                            <h3 class="publication-title">
+                                <a href="#">Federated Learning for Healthcare Applications</a>
+                            </h3>
+                            <p class="publication-authors">
+                                <strong>Your Name</strong>, Sarah Lee, Mike Chen
+                            </p>
+                            <p class="publication-venue">
+                                <em>Journal of Medical AI</em>, 2023
+                            </p>
+                            <p class="publication-abstract">
+                                A comprehensive study on applying federated learning techniques to healthcare
+                                data while maintaining patient privacy and data security.
+                            </p>
+                            <div class="publication-links">
+                                <a href="#" class="publication-link">PDF</a>
+                                <a href="#" class="publication-link">Supplementary</a>
+                                <a href="#" class="publication-link">BibTeX</a>
+                            </div>
+                        </div>
+                        <div class="publication-meta">
+                            <span class="publication-year">2023</span>
+                            <span class="publication-type journal">Journal</span>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Load More Button -->
+                <div class="text-center">
+                    <button class="btn btn-outline" id="loadMorePublications">Load More Publications</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section section-dark">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Research Projects</h2>
+                    <p class="section-subtitle">Current and past research initiatives</p>
+                </div>
+                <div class="projects-grid" id="current-projects">
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/400x250/4A90E2/FFFFFF?text=AI+Research" alt="AI Research Project">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Next-Gen AI Assistant</h3>
+                            <p class="project-description">
+                                Developing intelligent conversational agents that can understand context
+                                and provide meaningful assistance in academic and professional settings.
+                            </p>
+                            <div class="project-funding">
+                                <span class="funding-source">NSF Grant $500K</span>
+                                <span class="funding-period">2023-2026</span>
+                            </div>
+                            <div class="project-team">
+                                <strong>Team:</strong> 5 graduate students, 2 postdocs
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">Project Page</a>
+                                <a href="#" class="project-link">GitHub</a>
+                                <a href="#" class="project-link">Publications</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/400x250/50C878/FFFFFF?text=Healthcare+AI" alt="Healthcare AI Project">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">AI for Healthcare</h3>
+                            <p class="project-description">
+                                Applying machine learning techniques to medical diagnosis and treatment
+                                planning, focusing on improving patient outcomes and reducing costs.
+                            </p>
+                            <div class="project-funding">
+                                <span class="funding-source">NIH Grant $1.2M</span>
+                                <span class="funding-period">2022-2025</span>
+                            </div>
+                            <div class="project-team">
+                                <strong>Team:</strong> 8 graduate students, 3 postdocs
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">Project Page</a>
+                                <a href="#" class="project-link">Publications</a>
+                                <a href="#" class="project-link">Data</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Teaching Section -->
+        <section id="teaching" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Teaching</h2>
+                    <p class="section-subtitle">Courses taught and educational materials</p>
+                </div>
+                <div class="teaching-grid">
+                    <div class="teaching-category">
+                        <h3>Current Courses</h3>
+                        <div class="course-list">
+                            <article class="course-item">
+                                <div class="course-header">
+                                    <h4 class="course-code">CS 689</h4>
+                                    <h4 class="course-title">Advanced Machine Learning</h4>
+                                </div>
+                                <p class="course-description">
+                                    Graduate-level course covering advanced topics in machine learning,
+                                    including deep learning, reinforcement learning, and generative models.
+                                </p>
+                                <div class="course-details">
+                                    <span class="course-semester">Fall 2024</span>
+                                    <span class="course-enrollment">45 students</span>
+                                </div>
+                                <div class="course-links">
+                                    <a href="#" class="course-link">Syllabus</a>
+                                    <a href="#" class="course-link">Lectures</a>
+                                    <a href="#" class="course-link">Assignments</a>
+                                </div>
+                            </article>
+
+                            <article class="course-item">
+                                <div class="course-header">
+                                    <h4 class="course-code">CS 489</h4>
+                                    <h4 class="course-title">Introduction to AI</h4>
+                                </div>
+                                <p class="course-description">
+                                    Undergraduate introduction to artificial intelligence, covering search algorithms,
+                                    knowledge representation, and machine learning fundamentals.
+                                </p>
+                                <div class="course-details">
+                                    <span class="course-semester">Spring 2024</span>
+                                    <span class="course-enrollment">120 students</span>
+                                </div>
+                                <div class="course-links">
+                                    <a href="#" class="course-link">Syllabus</a>
+                                    <a href="#" class="course-link">Lectures</a>
+                                    <a href="#" class="course-link">Resources</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="teaching-category">
+                        <h3>Student Opportunities</h3>
+                        <div class="opportunities-list">
+                            <div class="opportunity-item">
+                                <h4>Graduate Research Assistantships</h4>
+                                <p>Looking for motivated graduate students to work on AI and machine learning research projects.</p>
+                                <a href="#" class="opportunity-link">Learn More</a>
+                            </div>
+                            <div class="opportunity-item">
+                                <h4>Undergraduate Research</h4>
+                                <p>Opportunities for undergraduate students to participate in research projects and gain hands-on experience.</p>
+                                <a href="#" class="opportunity-link">Apply Now</a>
+                            </div>
+                            <div class="opportunity-item">
+                                <h4>Summer Internships</h4>
+                                <p>Paid summer internship positions for students interested in AI research and development.</p>
+                                <a href="#" class="opportunity-link">View Positions</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Awards Section -->
+        <section id="awards" class="section section-dark">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Awards & Honors</h2>
+                    <p class="section-subtitle">Recognition and achievements</p>
+                </div>
+                <div class="awards-timeline">
+                    <article class="award-item">
+                        <div class="award-year">2023</div>
+                        <div class="award-content">
+                            <h3 class="award-title">Best Paper Award</h3>
+                            <p class="award-issuer">NeurIPS 2023</p>
+                            <p class="award-description">For outstanding contributions to machine learning research.</p>
+                        </div>
+                    </article>
+
+                    <article class="award-item">
+                        <div class="award-year">2022</div>
+                        <div class="award-content">
+                            <h3 class="award-title">NSF CAREER Award</h3>
+                            <p class="award-issuer">National Science Foundation</p>
+                            <p class="award-description">$500K award for research in AI and machine learning.</p>
+                        </div>
+                    </article>
+
+                    <article class="award-item">
+                        <div class="award-year">2021</div>
+                        <div class="award-content">
+                            <h3 class="award-title">Outstanding Teaching Award</h3>
+                            <p class="award-issuer">University Excellence in Teaching</p>
+                            <p class="award-description">Recognized for exceptional teaching and student mentorship.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Blog & News</h2>
+                    <p class="section-subtitle">Latest updates and insights</p>
+                </div>
+                <div class="blog-grid" id="recent-news">
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://via.placeholder.com/400x250/4A90E2/FFFFFF?text=Research+Update" alt="Research Update">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date">October 15, 2024</span>
+                                <span class="blog-category">Research</span>
+                            </div>
+                            <h3 class="blog-title">
+                                <a href="#">New Breakthrough in Protein Structure Prediction</a>
+                            </h3>
+                            <p class="blog-excerpt">
+                                Our latest research shows promising results in using AI for predicting protein structures,
+                                potentially revolutionizing drug discovery...
+                            </p>
+                            <a href="#" class="blog-link">Read More →</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://via.placeholder.com/400x250/50C878/FFFFFF?text=Conference" alt="Conference">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date">September 30, 2024</span>
+                                <span class="blog-category">Conference</span>
+                            </div>
+                            <h3 class="blog-title">
+                                <a href="#">Presenting at NeurIPS 2024</a>
+                            </h3>
+                            <p class="blog-excerpt">
+                                Excited to present our latest work on continual learning at this year's NeurIPS conference
+                                in Vancouver. Come see our talk...
+                            </p>
+                            <a href="#" class="blog-link">Read More →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section section-dark">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Contact</h2>
+                    <p class="section-subtitle">Get in touch</p>
+                </div>
+                <div class="contact-grid" id="contact-info">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>your.email@university.edu</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Office</h4>
+                                <p>Room 123, Computer Science Building<br>University Campus</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Office Hours</h4>
+                                <p>Monday, Wednesday: 2:00 PM - 4:00 PM<br>Friday: 10:00 AM - 12:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <form class="form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <nav class="footer-nav">
+                        <a href="#about">About</a>
+                        <a href="#research">Research</a>
+                        <a href="#publications">Publications</a>
+                        <a href="#contact">Contact</a>
+                    </nav>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <nav class="footer-nav">
+                        <a href="assets/cv.pdf">Download CV</a>
+                        <a href="#">GitHub</a>
+                        <a href="#">Google Scholar</a>
+                        <a href="#">ORCID</a>
+                    </nav>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="https://github.com" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://scholar.google.com" aria-label="Google Scholar"><i class="fab fa-google"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Your Name. All rights reserved. | <a href="#privacy">Privacy Policy</a> | <a href="#accessibility">Accessibility</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
