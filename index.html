@@ -1,724 +1,627 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Academic homepage - Research, publications, and teaching materials">
-    <meta name="keywords" content="academic, research, publications, teaching, university">
-    <meta name="author" content="Your Name">
-    <title>Academic Homepage | Your Name</title>
+    <meta name="description" content="韩琦卓 - 南开大学计算机学院本科生，竞赛获奖者，AI研究者">
+    <meta name="author" content="韩琦卓">
+    <title>韩琦卓 | Qizhuo Han</title>
 
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Academic Homepage | Your Name">
-    <meta property="og:description" content="Academic homepage featuring research, publications, and teaching materials">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://yourusername.github.io">
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
-
-    <!-- External Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
-
-    <!-- CSS -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Serif+SC:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body class="light-theme">
-    <!-- Progress Bar -->
-    <div class="progress-bar" id="progressBar"></div>
+<body>
 
-    <!-- Skip to main content for accessibility -->
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+<!-- Progress Bar -->
+<div class="progress-bar" id="progressBar"></div>
 
-    <!-- Header Navigation -->
-    <header class="header" id="header">
-        <nav class="nav-container">
-            <div class="nav-brand">
-                <a href="#home" class="brand-link">
-                    <i class="fas fa-graduation-cap"></i>
-                    <span>Your Name</span>
+<!-- Navigation -->
+<header class="header" id="header">
+    <nav class="nav-container">
+        <div class="nav-brand">
+            <a href="#home" class="brand-link">HQZ</a>
+        </div>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#research" class="nav-link">Research</a></li>
+            <li><a href="#competitions" class="nav-link">Competitions</a></li>
+            <li><a href="#honors" class="nav-link">Honors</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-controls">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <i class="fas fa-moon" id="themeIcon"></i>
+            </button>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+</header>
+
+<!-- Hero -->
+<section id="home" class="hero">
+    <div class="hero-bg">
+        <div class="grid-pattern"></div>
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+    </div>
+    <div class="hero-content">
+        <div class="hero-text">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span>南开大学 · 计算机学院 · 2023级</span>
+            </div>
+            <h1 class="hero-name">
+                <span class="name-zh">韩 琦 卓</span>
+                <span class="name-en">Qizhuo Han</span>
+            </h1>
+            <p class="hero-tagline">
+                Computer Science &amp; Finance · AI Researcher · Competition Enthusiast
+            </p>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <span class="stat-val">3.81</span>
+                    <span class="stat-lbl">GPA / 4.00</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="stat-val">17<sup>th</sup></span>
+                    <span class="stat-lbl">专业排名 / 178</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="stat-val">521</span>
+                    <span class="stat-lbl">CET-6</span>
+                </div>
+            </div>
+            <div class="hero-actions">
+                <a href="#contact" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i> Contact Me
+                </a>
+                <a href="https://github.com/IWITRIE" class="btn btn-ghost" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="assets/cv.pdf" class="btn btn-ghost" download>
+                    <i class="fas fa-file-alt"></i> CV
                 </a>
             </div>
-
-            <ul class="nav-menu" id="navMenu">
-                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#research" class="nav-link">Research</a></li>
-                <li class="nav-item"><a href="#publications" class="nav-link">Publications</a></li>
-                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-                <li class="nav-item"><a href="#teaching" class="nav-link">Teaching</a></li>
-                <li class="nav-item"><a href="#awards" class="nav-link">Awards</a></li>
-                <li class="nav-item"><a href="#blog" class="nav-link">Blog</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-
-            <div class="nav-controls">
-                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-                    <i class="fas fa-moon" id="themeIcon"></i>
-                </button>
-                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-        </nav>
-    </header>
-
-    <!-- Sidebar Navigation -->
-    <aside class="sidebar" id="sidebar">
-        <div class="sidebar-content">
-            <h3>Quick Navigation</h3>
-            <nav class="sidebar-nav">
-                <a href="#research-interests" class="sidebar-link">Research Interests</a>
-                <a href="#selected-publications" class="sidebar-link">Selected Publications</a>
-                <a href="#current-projects" class="sidebar-link">Current Projects</a>
-                <a href="#recent-news" class="sidebar-link">Recent News</a>
-                <a href="#contact-info" class="sidebar-link">Contact Info</a>
-            </nav>
         </div>
-    </aside>
-
-    <!-- Main Content -->
-    <main id="main-content">
-        <!-- Hero Section -->
-        <section id="home" class="hero">
-            <div class="hero-background">
-                <div class="animated-shapes">
-                    <div class="shape shape-1"></div>
-                    <div class="shape shape-2"></div>
-                    <div class="shape shape-3"></div>
+        <div class="hero-card">
+            <div class="profile-ring">
+                <div class="profile-inner">
+                    <span class="profile-initials">韩</span>
                 </div>
             </div>
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="hero-title">
-                        <span class="greeting">Hello, I'm</span>
-                        <span class="name">Your Name</span>
-                    </h1>
-                    <p class="hero-subtitle">Professor of Computer Science</p>
-                    <p class="hero-description">
-                        Researching artificial intelligence, machine learning, and human-computer interaction
-                        to create innovative solutions for real-world problems.
+            <div class="info-chips">
+                <div class="chip chip-top-left">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>天津 · 津南区</span>
+                </div>
+                <div class="chip chip-top-right">
+                    <i class="fas fa-code-branch"></i>
+                    <span>IWITRIE</span>
+                </div>
+                <div class="chip chip-bottom-left">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>NKU CS</span>
+                </div>
+                <div class="chip chip-bottom-right">
+                    <i class="fas fa-trophy"></i>
+                    <span>国家奖学金</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero-scroll">
+        <a href="#about">
+            <span>Scroll</span>
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </div>
+</section>
+
+<!-- About -->
+<section id="about" class="section">
+    <div class="container">
+        <div class="section-label">01 / About</div>
+        <h2 class="section-title">关于我</h2>
+        <div class="about-layout">
+            <div class="about-main">
+                <p class="about-lead">
+                    你好！我是韩琦卓，就读于<strong>南开大学计算机学院</strong>，主修计算机科学与技术，辅修金融学。
+                    我对人工智能、时间序列分析与对抗攻击方向充满热情，同时活跃于各类算法竞赛与数学建模舞台。
+                </p>
+                <p class="about-body">
+                    在校期间，我保持专业课排名 <strong>12/178</strong> 的优异成绩，并多次斩获国家级及省市级竞赛奖项。
+                    曾参与基于 RMDB 框架的数据库内核开发、基于 Seed 平台的减论智能体部署等系统级项目，
+                    积累了从底层系统到 AI 应用的宽泛工程经验。
+                </p>
+                <div class="skills-row">
+                    <div class="skill-group">
+                        <h4>编程语言</h4>
+                        <div class="skill-tags">
+                            <span class="stag">Python</span>
+                            <span class="stag">C/C++</span>
+                            <span class="stag">Java</span>
+                            <span class="stag">SQL</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <h4>研究方向</h4>
+                        <div class="skill-tags">
+                            <span class="stag stag-accent">时序预测</span>
+                            <span class="stag stag-accent">对抗攻击</span>
+                            <span class="stag stag-accent">VLM</span>
+                            <span class="stag stag-accent">数学建模</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <h4>工具框架</h4>
+                        <div class="skill-tags">
+                            <span class="stag stag-neutral">PyTorch</span>
+                            <span class="stag stag-neutral">Git</span>
+                            <span class="stag stag-neutral">Linux</span>
+                            <span class="stag stag-neutral">LaTeX</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-sidebar">
+                <div class="info-card">
+                    <div class="info-row">
+                        <i class="fas fa-university"></i>
+                        <div>
+                            <span class="info-label">学校</span>
+                            <span class="info-value">南开大学</span>
+                        </div>
+                    </div>
+                    <div class="info-row">
+                        <i class="fas fa-book-open"></i>
+                        <div>
+                            <span class="info-label">专业</span>
+                            <span class="info-value">计算机科学与技术</span>
+                        </div>
+                    </div>
+                    <div class="info-row">
+                        <i class="fas fa-layer-group"></i>
+                        <div>
+                            <span class="info-label">辅修</span>
+                            <span class="info-value">金融学</span>
+                        </div>
+                    </div>
+                    <div class="info-row">
+                        <i class="fas fa-calendar-alt"></i>
+                        <div>
+                            <span class="info-label">在读时间</span>
+                            <span class="info-value">2023.09 — 2027.06</span>
+                        </div>
+                    </div>
+                    <div class="info-row">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <span class="info-label">邮箱</span>
+                            <span class="info-value">2310428@mail.nankai.edu.cn</span>
+                        </div>
+                    </div>
+                    <div class="info-row">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <span class="info-label">电话</span>
+                            <span class="info-value">+86 175-1897-9659</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Education -->
+<section id="education" class="section section-alt">
+    <div class="container">
+        <div class="section-label">02 / Education</div>
+        <h2 class="section-title">教育背景</h2>
+        <div class="edu-card">
+            <div class="edu-logo">
+                <div class="edu-logo-inner">NKU</div>
+            </div>
+            <div class="edu-content">
+                <div class="edu-header">
+                    <div>
+                        <h3 class="edu-school">南开大学 <span class="edu-school-en">Nankai University</span></h3>
+                        <p class="edu-degree">计算机科学与技术（主修）· 金融学（辅修）</p>
+                    </div>
+                    <div class="edu-period">
+                        <span>2023.09 — 2027.06（预计）</span>
+                    </div>
+                </div>
+                <div class="edu-metrics">
+                    <div class="edu-metric">
+                        <span class="em-val">3.81 <span class="em-sub">/ 4.00</span></span>
+                        <span class="em-lbl">总 GPA</span>
+                    </div>
+                    <div class="edu-metric">
+                        <span class="em-val">3.84 <span class="em-sub">/ 4.00</span></span>
+                        <span class="em-lbl">专业课 GPA</span>
+                    </div>
+                    <div class="edu-metric">
+                        <span class="em-val">17 <span class="em-sub">/ 178</span></span>
+                        <span class="em-lbl">总排名</span>
+                    </div>
+                    <div class="edu-metric">
+                        <span class="em-val">12 <span class="em-sub">/ 178</span></span>
+                        <span class="em-lbl">专业课排名</span>
+                    </div>
+                    <div class="edu-metric">
+                        <span class="em-val">521</span>
+                        <span class="em-lbl">CET-6</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Research -->
+<section id="research" class="section">
+    <div class="container">
+        <div class="section-label">03 / Research</div>
+        <h2 class="section-title">研究方向</h2>
+        <p class="section-desc">
+            专注于深度学习的安全性与鲁棒性，尤其是时间序列预测模型在对抗环境下的脆弱性分析。
+        </p>
+        <div class="research-area-grid">
+            <div class="ra-card ra-main">
+                <div class="ra-icon"><i class="fas fa-shield-alt"></i></div>
+                <div class="ra-body">
+                    <h3>Adversarial Robustness · 时序对抗</h3>
+                    <p>
+                        针对深度学习时间序列预测模型的黑盒对抗攻击机制研究，
+                        聚焦于频率域扰动与模型不可知场景，探索智能电网、金融预测等关键系统的安全边界。
                     </p>
-                    <div class="hero-actions">
-                        <a href="#contact" class="btn btn-primary">Get in Touch</a>
-                        <a href="#publications" class="btn btn-secondary">View Publications</a>
-                        <a href="assets/cv.pdf" class="btn btn-outline" download>Download CV</a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <div class="profile-card">
-                        <img src="https://via.placeholder.com/300x300/4A90E2/FFFFFF?text=Photo" alt="Profile" class="profile-image">
-                        <div class="profile-info">
-                            <div class="social-links">
-                                <a href="https://github.com" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                                <a href="https://linkedin.com" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                                <a href="https://twitter.com" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                                <a href="mailto:your.email@university.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                            </div>
-                        </div>
+                    <div class="ra-tags">
+                        <span>Time Series Forecasting</span>
+                        <span>Black-Box Attack</span>
+                        <span>Adversarial ML</span>
+                        <span>Frequency Domain</span>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">About Me</h2>
-                    <p class="section-subtitle">Academic background and research journey</p>
-                </div>
-                <div class="about-grid">
-                    <div class="about-content">
-                        <div class="about-text">
-                            <p>
-                                I am a Professor in the Department of Computer Science at Your University,
-                                where I lead the AI Research Lab. My research focuses on developing novel
-                                machine learning algorithms and applying them to solve real-world problems.
-                            </p>
-                            <p>
-                                With over 15 years of experience in academia and industry, I have published
-                                more than 100 papers in top-tier conferences and journals. My work has been
-                                recognized with numerous awards, including the Best Paper Award at NeurIPS 2022.
-                            </p>
-                        </div>
-                        <div class="about-highlights">
-                            <div class="highlight-item">
-                                <i class="fas fa-university"></i>
-                                <div>
-                                    <h4>Education</h4>
-                                    <p>PhD in Computer Science, MIT</p>
-                                </div>
-                            </div>
-                            <div class="highlight-item">
-                                <i class="fas fa-users"></i>
-                                <div>
-                                    <h4>Students</h4>
-                                    <p>20+ graduate students mentored</p>
-                                </div>
-                            </div>
-                            <div class="highlight-item">
-                                <i class="fas fa-book"></i>
-                                <div>
-                                    <h4>Publications</h4>
-                                    <p>100+ peer-reviewed papers</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="about-stats">
-                        <div class="stat-card">
-                            <span class="stat-number">15+</span>
-                            <span class="stat-label">Years Experience</span>
-                        </div>
-                        <div class="stat-card">
-                            <span class="stat-number">100+</span>
-                            <span class="stat-label">Publications</span>
-                        </div>
-                        <div class="stat-card">
-                            <span class="stat-number">20+</span>
-                            <span class="stat-label">Students Mentored</span>
-                        </div>
-                        <div class="stat-card">
-                            <span class="stat-number">$2M+</span>
-                            <span class="stat-label">Research Funding</span>
-                        </div>
+            <div class="ra-card">
+                <div class="ra-icon ra-icon-sm"><i class="fas fa-eye"></i></div>
+                <div class="ra-body">
+                    <h3>Vision-Language Models</h3>
+                    <p>探索基于图片干预的 VLM 推理幻觉抑制，研究多模态模型在视觉感知层面的鲁棒性。</p>
+                    <div class="ra-tags">
+                        <span>VLM</span>
+                        <span>Hallucination</span>
+                        <span>Multimodal</span>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <!-- Research Section -->
-        <section id="research" class="section section-dark">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Research Interests</h2>
-                    <p class="section-subtitle">Areas of academic inquiry and exploration</p>
-                </div>
-                <div class="research-grid" id="research-interests">
-                    <article class="research-card">
-                        <div class="research-icon">
-                            <i class="fas fa-brain"></i>
-                        </div>
-                        <h3 class="research-title">Machine Learning</h3>
-                        <p class="research-description">
-                            Deep learning, neural networks, and novel algorithms for pattern recognition
-                            and predictive modeling in complex systems.
-                        </p>
-                        <div class="research-tags">
-                            <span class="tag">Deep Learning</span>
-                            <span class="tag">Neural Networks</span>
-                            <span class="tag">AI</span>
-                        </div>
-                    </article>
-
-                    <article class="research-card">
-                        <div class="research-icon">
-                            <i class="fas fa-robot"></i>
-                        </div>
-                        <h3 class="research-title">Robotics</h3>
-                        <p class="research-description">
-                            Human-robot interaction, autonomous systems, and intelligent control systems
-                            for next-generation robotic applications.
-                        </p>
-                        <div class="research-tags">
-                            <span class="tag">Autonomy</span>
-                            <span class="tag">HCI</span>
-                            <span class="tag">Control Systems</span>
-                        </div>
-                    </article>
-
-                    <article class="research-card">
-                        <div class="research-icon">
-                            <i class="fas fa-database"></i>
-                        </div>
-                        <h3 class="research-title">Data Science</h3>
-                        <p class="research-description">
-                            Big data analytics, knowledge discovery, and data-driven decision making
-                            in scientific and business applications.
-                        </p>
-                        <div class="research-tags">
-                            <span class="tag">Big Data</span>
-                            <span class="tag">Analytics</span>
-                            <span class="tag">Visualization</span>
-                        </div>
-                    </article>
-
-                    <article class="research-card">
-                        <div class="research-icon">
-                            <i class="fas fa-eye"></i>
-                        </div>
-                        <h3 class="research-title">Computer Vision</h3>
-                        <p class="research-description">
-                            Image processing, object recognition, and visual understanding systems
-                            for autonomous perception and analysis.
-                        </p>
-                        <div class="research-tags">
-                            <span class="tag">Image Processing</span>
-                            <span class="tag">Object Detection</span>
-                            <span class="tag">AR/VR</span>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Publications Section -->
-        <section id="publications" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Publications</h2>
-                    <p class="section-subtitle">Recent academic work and research papers</p>
-                </div>
-
-                <!-- Search and Filter -->
-                <div class="publications-controls">
-                    <div class="search-box">
-                        <input type="text" id="publicationSearch" placeholder="Search publications..." class="search-input">
-                        <i class="fas fa-search"></i>
-                    </div>
-                    <div class="filter-buttons">
-                        <button class="filter-btn active" data-filter="all">All</button>
-                        <button class="filter-btn" data-filter="journal">Journals</button>
-                        <button class="filter-btn" data-filter="conference">Conferences</button>
-                        <button class="filter-btn" data-filter="workshop">Workshops</button>
+            <div class="ra-card">
+                <div class="ra-icon ra-icon-sm"><i class="fas fa-database"></i></div>
+                <div class="ra-body">
+                    <h3>Systems & Database</h3>
+                    <p>数据库内核实现与性能优化，包括存储引擎、查询优化器及并发控制机制的设计与工程实践。</p>
+                    <div class="ra-tags">
+                        <span>DBMS</span>
+                        <span>Systems Programming</span>
+                        <span>C++</span>
                     </div>
                 </div>
-
-                <!-- Publications List -->
-                <div class="publications-list" id="publicationsList">
-                    <article class="publication-item" data-type="journal" data-year="2024">
-                        <div class="publication-content">
-                            <h3 class="publication-title">
-                                <a href="#">Deep Learning Approaches to Protein Structure Prediction</a>
-                            </h3>
-                            <p class="publication-authors">
-                                <strong>Your Name</strong>, John Doe, Jane Smith, et al.
-                            </p>
-                            <p class="publication-venue">
-                                <em>Nature Machine Intelligence</em>, 2024
-                            </p>
-                            <p class="publication-abstract">
-                                We present a novel deep learning architecture for predicting protein structures
-                                from amino acid sequences, achieving state-of-the-art results on benchmark datasets.
-                            </p>
-                            <div class="publication-links">
-                                <a href="#" class="publication-link">PDF</a>
-                                <a href="#" class="publication-link">Code</a>
-                                <a href="#" class="publication-link">Data</a>
-                                <a href="#" class="publication-link">BibTeX</a>
-                            </div>
-                        </div>
-                        <div class="publication-meta">
-                            <span class="publication-year">2024</span>
-                            <span class="publication-type journal">Journal</span>
-                        </div>
-                    </article>
-
-                    <article class="publication-item" data-type="conference" data-year="2023">
-                        <div class="publication-content">
-                            <h3 class="publication-title">
-                                <a href="#">Adaptive Neural Networks for Continual Learning</a>
-                            </h3>
-                            <p class="publication-authors">
-                                <strong>Your Name</strong>, Alice Johnson, Bob Wilson
-                            </p>
-                            <p class="publication-venue">
-                                <em>Proceedings of NeurIPS 2023</em>
-                            </p>
-                            <p class="publication-abstract">
-                                We propose a new approach to continual learning that uses adaptive neural networks
-                                to overcome catastrophic forgetting while maintaining high performance across tasks.
-                            </p>
-                            <div class="publication-links">
-                                <a href="#" class="publication-link">PDF</a>
-                                <a href="#" class="publication-link">Code</a>
-                                <a href="#" class="publication-link">Slides</a>
-                                <a href="#" class="publication-link">BibTeX</a>
-                            </div>
-                        </div>
-                        <div class="publication-meta">
-                            <span class="publication-year">2023</span>
-                            <span class="publication-type conference">Conference</span>
-                        </div>
-                    </article>
-
-                    <article class="publication-item" data-type="journal" data-year="2023">
-                        <div class="publication-content">
-                            <h3 class="publication-title">
-                                <a href="#">Federated Learning for Healthcare Applications</a>
-                            </h3>
-                            <p class="publication-authors">
-                                <strong>Your Name</strong>, Sarah Lee, Mike Chen
-                            </p>
-                            <p class="publication-venue">
-                                <em>Journal of Medical AI</em>, 2023
-                            </p>
-                            <p class="publication-abstract">
-                                A comprehensive study on applying federated learning techniques to healthcare
-                                data while maintaining patient privacy and data security.
-                            </p>
-                            <div class="publication-links">
-                                <a href="#" class="publication-link">PDF</a>
-                                <a href="#" class="publication-link">Supplementary</a>
-                                <a href="#" class="publication-link">BibTeX</a>
-                            </div>
-                        </div>
-                        <div class="publication-meta">
-                            <span class="publication-year">2023</span>
-                            <span class="publication-type journal">Journal</span>
-                        </div>
-                    </article>
-                </div>
-
-                <!-- Load More Button -->
-                <div class="text-center">
-                    <button class="btn btn-outline" id="loadMorePublications">Load More Publications</button>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="section section-dark">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Research Projects</h2>
-                    <p class="section-subtitle">Current and past research initiatives</p>
-                </div>
-                <div class="projects-grid" id="current-projects">
-                    <article class="project-card">
-                        <div class="project-image">
-                            <img src="https://via.placeholder.com/400x250/4A90E2/FFFFFF?text=AI+Research" alt="AI Research Project">
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Next-Gen AI Assistant</h3>
-                            <p class="project-description">
-                                Developing intelligent conversational agents that can understand context
-                                and provide meaningful assistance in academic and professional settings.
-                            </p>
-                            <div class="project-funding">
-                                <span class="funding-source">NSF Grant $500K</span>
-                                <span class="funding-period">2023-2026</span>
-                            </div>
-                            <div class="project-team">
-                                <strong>Team:</strong> 5 graduate students, 2 postdocs
-                            </div>
-                            <div class="project-links">
-                                <a href="#" class="project-link">Project Page</a>
-                                <a href="#" class="project-link">GitHub</a>
-                                <a href="#" class="project-link">Publications</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-image">
-                            <img src="https://via.placeholder.com/400x250/50C878/FFFFFF?text=Healthcare+AI" alt="Healthcare AI Project">
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">AI for Healthcare</h3>
-                            <p class="project-description">
-                                Applying machine learning techniques to medical diagnosis and treatment
-                                planning, focusing on improving patient outcomes and reducing costs.
-                            </p>
-                            <div class="project-funding">
-                                <span class="funding-source">NIH Grant $1.2M</span>
-                                <span class="funding-period">2022-2025</span>
-                            </div>
-                            <div class="project-team">
-                                <strong>Team:</strong> 8 graduate students, 3 postdocs
-                            </div>
-                            <div class="project-links">
-                                <a href="#" class="project-link">Project Page</a>
-                                <a href="#" class="project-link">Publications</a>
-                                <a href="#" class="project-link">Data</a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Teaching Section -->
-        <section id="teaching" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Teaching</h2>
-                    <p class="section-subtitle">Courses taught and educational materials</p>
-                </div>
-                <div class="teaching-grid">
-                    <div class="teaching-category">
-                        <h3>Current Courses</h3>
-                        <div class="course-list">
-                            <article class="course-item">
-                                <div class="course-header">
-                                    <h4 class="course-code">CS 689</h4>
-                                    <h4 class="course-title">Advanced Machine Learning</h4>
-                                </div>
-                                <p class="course-description">
-                                    Graduate-level course covering advanced topics in machine learning,
-                                    including deep learning, reinforcement learning, and generative models.
-                                </p>
-                                <div class="course-details">
-                                    <span class="course-semester">Fall 2024</span>
-                                    <span class="course-enrollment">45 students</span>
-                                </div>
-                                <div class="course-links">
-                                    <a href="#" class="course-link">Syllabus</a>
-                                    <a href="#" class="course-link">Lectures</a>
-                                    <a href="#" class="course-link">Assignments</a>
-                                </div>
-                            </article>
-
-                            <article class="course-item">
-                                <div class="course-header">
-                                    <h4 class="course-code">CS 489</h4>
-                                    <h4 class="course-title">Introduction to AI</h4>
-                                </div>
-                                <p class="course-description">
-                                    Undergraduate introduction to artificial intelligence, covering search algorithms,
-                                    knowledge representation, and machine learning fundamentals.
-                                </p>
-                                <div class="course-details">
-                                    <span class="course-semester">Spring 2024</span>
-                                    <span class="course-enrollment">120 students</span>
-                                </div>
-                                <div class="course-links">
-                                    <a href="#" class="course-link">Syllabus</a>
-                                    <a href="#" class="course-link">Lectures</a>
-                                    <a href="#" class="course-link">Resources</a>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-
-                    <div class="teaching-category">
-                        <h3>Student Opportunities</h3>
-                        <div class="opportunities-list">
-                            <div class="opportunity-item">
-                                <h4>Graduate Research Assistantships</h4>
-                                <p>Looking for motivated graduate students to work on AI and machine learning research projects.</p>
-                                <a href="#" class="opportunity-link">Learn More</a>
-                            </div>
-                            <div class="opportunity-item">
-                                <h4>Undergraduate Research</h4>
-                                <p>Opportunities for undergraduate students to participate in research projects and gain hands-on experience.</p>
-                                <a href="#" class="opportunity-link">Apply Now</a>
-                            </div>
-                            <div class="opportunity-item">
-                                <h4>Summer Internships</h4>
-                                <p>Paid summer internship positions for students interested in AI research and development.</p>
-                                <a href="#" class="opportunity-link">View Positions</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Awards Section -->
-        <section id="awards" class="section section-dark">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Awards & Honors</h2>
-                    <p class="section-subtitle">Recognition and achievements</p>
-                </div>
-                <div class="awards-timeline">
-                    <article class="award-item">
-                        <div class="award-year">2023</div>
-                        <div class="award-content">
-                            <h3 class="award-title">Best Paper Award</h3>
-                            <p class="award-issuer">NeurIPS 2023</p>
-                            <p class="award-description">For outstanding contributions to machine learning research.</p>
-                        </div>
-                    </article>
-
-                    <article class="award-item">
-                        <div class="award-year">2022</div>
-                        <div class="award-content">
-                            <h3 class="award-title">NSF CAREER Award</h3>
-                            <p class="award-issuer">National Science Foundation</p>
-                            <p class="award-description">$500K award for research in AI and machine learning.</p>
-                        </div>
-                    </article>
-
-                    <article class="award-item">
-                        <div class="award-year">2021</div>
-                        <div class="award-content">
-                            <h3 class="award-title">Outstanding Teaching Award</h3>
-                            <p class="award-issuer">University Excellence in Teaching</p>
-                            <p class="award-description">Recognized for exceptional teaching and student mentorship.</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Blog Section -->
-        <section id="blog" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Blog & News</h2>
-                    <p class="section-subtitle">Latest updates and insights</p>
-                </div>
-                <div class="blog-grid" id="recent-news">
-                    <article class="blog-card">
-                        <div class="blog-image">
-                            <img src="https://via.placeholder.com/400x250/4A90E2/FFFFFF?text=Research+Update" alt="Research Update">
-                        </div>
-                        <div class="blog-content">
-                            <div class="blog-meta">
-                                <span class="blog-date">October 15, 2024</span>
-                                <span class="blog-category">Research</span>
-                            </div>
-                            <h3 class="blog-title">
-                                <a href="#">New Breakthrough in Protein Structure Prediction</a>
-                            </h3>
-                            <p class="blog-excerpt">
-                                Our latest research shows promising results in using AI for predicting protein structures,
-                                potentially revolutionizing drug discovery...
-                            </p>
-                            <a href="#" class="blog-link">Read More →</a>
-                        </div>
-                    </article>
-
-                    <article class="blog-card">
-                        <div class="blog-image">
-                            <img src="https://via.placeholder.com/400x250/50C878/FFFFFF?text=Conference" alt="Conference">
-                        </div>
-                        <div class="blog-content">
-                            <div class="blog-meta">
-                                <span class="blog-date">September 30, 2024</span>
-                                <span class="blog-category">Conference</span>
-                            </div>
-                            <h3 class="blog-title">
-                                <a href="#">Presenting at NeurIPS 2024</a>
-                            </h3>
-                            <p class="blog-excerpt">
-                                Excited to present our latest work on continual learning at this year's NeurIPS conference
-                                in Vancouver. Come see our talk...
-                            </p>
-                            <a href="#" class="blog-link">Read More →</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="section section-dark">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Contact</h2>
-                    <p class="section-subtitle">Get in touch</p>
-                </div>
-                <div class="contact-grid" id="contact-info">
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Email</h4>
-                                <p>your.email@university.edu</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h4>Phone</h4>
-                                <p>+1 (555) 123-4567</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>Office</h4>
-                                <p>Room 123, Computer Science Building<br>University Campus</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-clock"></i>
-                            <div>
-                                <h4>Office Hours</h4>
-                                <p>Monday, Wednesday: 2:00 PM - 4:00 PM<br>Friday: 10:00 AM - 12:00 PM</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="contact-form">
-                        <form class="form" id="contactForm">
-                            <div class="form-group">
-                                <label for="name">Name</label>
-                                <input type="text" id="name" name="name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="subject">Subject</label>
-                                <input type="text" id="subject" name="subject" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Message</label>
-                                <textarea id="message" name="message" rows="5" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Send Message</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <nav class="footer-nav">
-                        <a href="#about">About</a>
-                        <a href="#research">Research</a>
-                        <a href="#publications">Publications</a>
-                        <a href="#contact">Contact</a>
-                    </nav>
-                </div>
-                <div class="footer-section">
-                    <h3>Resources</h3>
-                    <nav class="footer-nav">
-                        <a href="assets/cv.pdf">Download CV</a>
-                        <a href="#">GitHub</a>
-                        <a href="#">Google Scholar</a>
-                        <a href="#">ORCID</a>
-                    </nav>
-                </div>
-                <div class="footer-section">
-                    <h3>Connect</h3>
-                    <div class="social-links">
-                        <a href="https://github.com" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="https://linkedin.com" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://twitter.com" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="https://scholar.google.com" aria-label="Google Scholar"><i class="fab fa-google"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Your Name. All rights reserved. | <a href="#privacy">Privacy Policy</a> | <a href="#accessibility">Accessibility</a></p>
             </div>
         </div>
-    </footer>
 
-    <!-- Back to Top Button -->
-    <button class="back-to-top" id="backToTop" aria-label="Back to top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
+        <!-- Subtle preprint hint -->
+        <div class="preprint-hint">
+            <div class="ph-left">
+                <div class="ph-pulse">
+                    <span class="ph-dot"></span>
+                    <span class="ph-ring"></span>
+                </div>
+                <div class="ph-text">
+                    <p class="ph-title">
+                        有一项关于时间序列对抗攻击的工作正在推进中
+                        <span class="ph-venue-badge">CCF-A · 顶会</span>
+                    </p>
+                    <p class="ph-sub">
+                        受双盲审稿机制及会议政策所限，暂无法透露更多细节。
+                        目前审稿结果良好，
+                        <span class="ph-score">所有审稿人评分均为 4/5（Weak Accept）</span>，
+                        有望正式接收。
+                    </p>
+                </div>
+            </div>
+            <div class="ph-right">
+                <span class="ph-status">Under Review</span>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <!-- JavaScript -->
-    <script src="script.js"></script>
+<!-- Competitions -->
+<section id="competitions" class="section section-alt">
+    <div class="container">
+        <div class="section-label">04 / Competitions</div>
+        <h2 class="section-title">竞赛经历</h2>
+        <p class="section-desc">
+            在多项国家级、省市级技术与数学竞赛中屡获佳绩，涵盖数据库系统实现、AI 应用创新与数学建模等方向。
+        </p>
+        <div class="comp-grid">
+
+            <div class="comp-card comp-featured">
+                <div class="comp-rank rank-national-2">全国二等奖</div>
+                <div class="comp-header">
+                    <div class="comp-icon comp-icon-db">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="comp-year-badge">2025</div>
+                </div>
+                <h3 class="comp-title">全国大学生计算机系统能力大赛</h3>
+                <p class="comp-track">数据库内核实现赛道</p>
+
+                <p class="comp-desc">
+                    基于 <strong>RMDB</strong> 框架独立实现了数据库管理系统（DBMS）内核，
+                    涵盖存储引擎、查询优化、事务管理与并发控制等核心模块，最终获得全国二等奖。
+                </p>
+                <div class="comp-tags">
+                    <span>DBMS</span>
+                    <span>C++</span>
+                    <span>存储引擎</span>
+                    <span>事务管理</span>
+                </div>
+            </div>
+
+            <div class="comp-card comp-featured">
+                <div class="comp-rank rank-national-1">软件专业组一等奖</div>
+                <div class="comp-header">
+                    <div class="comp-icon comp-icon-ai">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="comp-year-badge">2025</div>
+                </div>
+                <h3 class="comp-title">火山杯 AI 应用创新大赛</h3>
+                <p class="comp-track">字节跳动主办 · 软件专业组</p>
+
+                <p class="comp-desc">
+                    基于字节跳动 <strong>Seed</strong> 平台进行减论智能体（Agent）的部署与优化，
+                    在软件专业组中脱颖而出，荣获一等奖。
+                </p>
+                <div class="comp-tags">
+                    <span>LLM Agent</span>
+                    <span>Seed 平台</span>
+                    <span>AI 应用</span>
+                </div>
+            </div>
+
+            <div class="comp-card">
+                <div class="comp-rank rank-provincial">天津市二等奖</div>
+                <div class="comp-header">
+                    <div class="comp-icon comp-icon-math">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="comp-year-badge">2024</div>
+                </div>
+                <h3 class="comp-title">全国大学生数学建模大赛</h3>
+                <p class="comp-track">高教社杯</p>
+
+                <p class="comp-desc">
+                    带领团队完成复杂系统的数学建模与算法设计，方案经过严格的数学推导与仿真验证，荣获天津市二等奖。
+                </p>
+                <div class="comp-tags">
+                    <span>数学建模</span>
+                    <span>优化算法</span>
+                    <span>Python</span>
+                </div>
+            </div>
+
+            <div class="comp-card">
+                <div class="comp-rank rank-honorable">Honorable Mention（美赛 M 奖）</div>
+                <div class="comp-header">
+                    <div class="comp-icon comp-icon-intl">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="comp-year-badge">2025</div>
+                </div>
+                <h3 class="comp-title">Mathematical Contest in Modeling (MCM)</h3>
+                <p class="comp-track">国际大学生数学建模竞赛</p>
+
+                <p class="comp-desc">
+                    在国际数学建模竞赛中代表南开大学参赛，构建多目标优化模型，
+                    最终获得 Honorable Mention（M 奖）。
+                </p>
+                <div class="comp-tags">
+                    <span>MCM</span>
+                    <span>数值分析</span>
+                    <span>英文写作</span>
+                </div>
+            </div>
+
+            <div class="comp-card">
+                <div class="comp-rank rank-national-1">天津赛区一等奖</div>
+                <div class="comp-header">
+                    <div class="comp-icon comp-icon-math2">
+                        <i class="fas fa-infinity"></i>
+                    </div>
+                    <div class="comp-year-badge">2024</div>
+                </div>
+                <h3 class="comp-title">第 16 届全国大学生数学竞赛</h3>
+                <p class="comp-track">天津赛区</p>
+
+                <p class="comp-desc">
+                    在第 16 届全国大学生数学竞赛天津赛区中，凭借扎实的数学基础与解题技巧，
+                    荣获一等奖。
+                </p>
+                <div class="comp-tags">
+                    <span>高等数学</span>
+                    <span>数学分析</span>
+                    <span>线性代数</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Competition Summary -->
+        <div class="comp-summary">
+            <div class="cs-item">
+                <span class="cs-num">5</span>
+                <span class="cs-lbl">竞赛获奖</span>
+            </div>
+            <div class="cs-item">
+                <span class="cs-num">2</span>
+                <span class="cs-lbl">国家级奖项</span>
+            </div>
+            <div class="cs-item">
+                <span class="cs-num">1</span>
+                <span class="cs-lbl">国际赛项</span>
+            </div>
+            <div class="cs-item">
+                <span class="cs-num">4×</span>
+                <span class="cs-lbl">担任负责人</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Honors -->
+<section id="honors" class="section">
+    <div class="container">
+        <div class="section-label">05 / Honors</div>
+        <h2 class="section-title">荣誉奖项</h2>
+        <div class="honors-timeline">
+
+            <div class="honors-year-group">
+                <div class="hy-year">2025</div>
+                <div class="hy-items">
+                    <div class="honor-item honor-national">
+                        <div class="honor-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="honor-content">
+                            <h3 class="honor-title">南开大学公能奖学金</h3>
+                            <p class="honor-issuer">南开大学</p>
+                            <span class="honor-badge badge-scholarship">奖学金</span>
+                        </div>
+                    </div>
+                    <div class="honor-item honor-school">
+                        <div class="honor-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="honor-content">
+                            <h3 class="honor-title">南开大学"三好学生"</h3>
+                            <p class="honor-issuer">南开大学</p>
+                            <span class="honor-badge badge-merit">荣誉称号</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="honors-year-group">
+                <div class="hy-year">2024</div>
+                <div class="hy-items">
+                    <div class="honor-item honor-national honor-highlight">
+                        <div class="honor-icon">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <div class="honor-content">
+                            <h3 class="honor-title">国家奖学金</h3>
+                            <p class="honor-issuer">中华人民共和国教育部</p>
+                            <span class="honor-badge badge-national">国家级</span>
+                        </div>
+                    </div>
+                    <div class="honor-item honor-school">
+                        <div class="honor-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="honor-content">
+                            <h3 class="honor-title">南开大学"三好学生"</h3>
+                            <p class="honor-issuer">南开大学</p>
+                            <span class="honor-badge badge-merit">荣誉称号</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="section">
+    <div class="container">
+        <div class="section-label">06 / Contact</div>
+        <h2 class="section-title">联系我</h2>
+        <p class="section-desc">欢迎就学术合作、竞赛交流或任何感兴趣的话题与我联系。</p>
+        <div class="contact-layout">
+            <div class="contact-cards">
+                <a href="mailto:2310428@mail.nankai.edu.cn" class="contact-card">
+                    <div class="cc-icon"><i class="fas fa-envelope"></i></div>
+                    <div class="cc-content">
+                        <span class="cc-label">邮箱</span>
+                        <span class="cc-value">2310428@mail.nankai.edu.cn</span>
+                    </div>
+                    <i class="fas fa-arrow-right cc-arrow"></i>
+                </a>
+                <a href="tel:+8617518979659" class="contact-card">
+                    <div class="cc-icon"><i class="fas fa-phone"></i></div>
+                    <div class="cc-content">
+                        <span class="cc-label">电话</span>
+                        <span class="cc-value">+86 175-1897-9659</span>
+                    </div>
+                    <i class="fas fa-arrow-right cc-arrow"></i>
+                </a>
+                <a href="https://github.com/IWITRIE" target="_blank" class="contact-card">
+                    <div class="cc-icon"><i class="fab fa-github"></i></div>
+                    <div class="cc-content">
+                        <span class="cc-label">GitHub</span>
+                        <span class="cc-value">github.com/IWITRIE</span>
+                    </div>
+                    <i class="fas fa-arrow-right cc-arrow"></i>
+                </a>
+                <div class="contact-card contact-card-static">
+                    <div class="cc-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="cc-content">
+                        <span class="cc-label">地址</span>
+                        <span class="cc-value">天津市津南区，南开大学</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <span class="footer-name">韩琦卓</span>
+                <span class="footer-school">南开大学 · 计算机学院</span>
+            </div>
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#research">Research</a>
+                <a href="#competitions">Competitions</a>
+                <a href="#honors">Honors</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 韩琦卓 · Qizhuo Han. Built with care.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Back to Top -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<script src="script.js"></script>
 </body>
 </html>
