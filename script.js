@@ -13,7 +13,7 @@ function initTheme() {
   const icon = document.getElementById('themeIcon');
   const html = document.documentElement;
 
-  const saved = localStorage.getItem('theme') || 'dark';
+  const saved = localStorage.getItem('theme') || 'light';
   applyTheme(saved);
 
   btn.addEventListener('click', () => {
