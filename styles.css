@@ -343,7 +343,7 @@ ul { list-style: none; }
 
 /* ===== Research ===== */
 .research-area-grid {
-  display: grid; grid-template-columns: 1fr 1fr;
+  display: grid; grid-template-columns: repeat(3, 1fr);
   gap: 1rem; margin-bottom: 1.5rem;
 }
 .ra-card {
@@ -355,9 +355,7 @@ ul { list-style: none; }
   transition: border-color .2s;
 }
 .ra-card:hover { border-color: var(--border-2); }
-.ra-main {
-  grid-column: 1 / -1;
-}
+.ra-main { }
 .ra-icon {
   width: 36px; height: 36px; flex-shrink: 0;
   border-radius: var(--radius-sm);
@@ -607,6 +605,9 @@ ul { list-style: none; }
 @media (max-width: 900px) {
   .research-area-grid { grid-template-columns: 1fr; }
   .preprint-hint { flex-direction: column; gap: .75rem; }
+}
+@media (min-width: 601px) and (max-width: 900px) {
+  .research-area-grid { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 860px) {
   .hero-content { grid-template-columns: 1fr; gap: 2.5rem; text-align: center; }
