@@ -253,6 +253,21 @@ ul { list-style: none; }
   margin-bottom: 2.5rem; line-height: 1.8;
 }
 
+/* ===== Seeking Banner ===== */
+.seeking-banner {
+  display: flex; align-items: flex-start; gap: .85rem;
+  background: var(--accent-light);
+  border: 1px solid rgba(37,99,235,.2);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius-sm);
+  padding: .9rem 1.1rem;
+  margin-bottom: 1.5rem;
+}
+.seeking-banner i { color: var(--accent); font-size: .85rem; margin-top: .2rem; flex-shrink: 0; }
+.seeking-banner div { display: flex; flex-direction: column; gap: .2rem; }
+.seeking-title { font-size: .8rem; font-weight: 600; color: var(--accent); }
+.seeking-desc { font-size: .82rem; color: var(--text-2); line-height: 1.6; }
+
 /* ===== About ===== */
 .about-layout {
   display: grid; grid-template-columns: 1fr 300px; gap: 4rem;
